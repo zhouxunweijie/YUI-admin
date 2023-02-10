@@ -1,0 +1,8 @@
+@import './globalVar';
+
+// 导出样式需要单独放在一个文件内，否则打包出错
+:export {
+  breakWidth: var(--z-aside-width);
+  foldWidth: var(--z-aside-fold-width);
+  systemColor: var(--z-system-color);
+}

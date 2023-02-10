@@ -1,0 +1,73 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "站酷高端黑 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/BmXIfVDpviT7/4Hf8GMXw94q8vRVdkMF6L.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/BmXIfVDpviT7/5QqI4rqxflE60yQBHragq.woff") format("woff");
+  font-display: swap;
+}
+
+:root{
+  --z-aside-width: 200px; // 左侧菜单栏宽度
+  --z-aside-fold-width: 64px; // 左侧菜单栏宽度
+  --z-aside-logo: 60px; // 左侧菜单栏logo高度
+  --z-header-height: 60px; // 头部操作栏高度
+  --z-tagView-height: 30px; // 动态路由栏高度
+  --z-system-color: #33cabb; // 系统主题颜色
+  --el-dropdown-menu-index: 999;
+
+
+  --el-color-primary: var(--z-system-color); // 覆盖element-plus默认主题
+}
+html.dark{
+  --el-color-primary: var(--z-system-color); // 覆盖element-plus默认主题
+}
+
+
+html.dark .github-markdown-body pre{
+  background-color: var(--el-bg-color)
+}
+
+html,body {
+  margin: 0;
+  overflow: hidden;
+  font-family: '思源宋体 ExtraLight';
+}
+*{
+  box-sizing: border-box;
+}
+
+.m5{
+  margin: 0 5px;
+}
+.router-link{
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.el-menu:not(.el-menu--collapse) {
+  width: 100%;
+ }
+
+//  组件渲染时的动画
+ /* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-leave-active{
+  position: relative;
+}
+.fade-transform-enter-active{
+  position: inherit;
+}
+
+.fade-transform-enter-from {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
