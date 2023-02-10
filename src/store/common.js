@@ -11,10 +11,14 @@ export const useCommonStore = defineStore('common', {
       isWatermark: true, // 是否加水印
       theme: '', // 当前主题，默认亮色主题
       primaryColor: '#33cabb', // 系统默认主题颜色
+      winW: document.documentElement.clientWidth || document.body.clientWidth
     };
   },
   getters: {},
   actions: {
+    setWindowWidth(winW){
+      this.winW = winW;
+    },
     // 设置菜单是否折叠
     setCollapse(flag) {
       this.isCollapse = typeof flag === 'boolean' ? flag : !this.isCollapse;

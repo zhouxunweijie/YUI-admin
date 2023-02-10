@@ -7,7 +7,7 @@
         :icon="isCollapse ? 'icon-zhankai' : 'icon-shouqi'"
       ></Iconfont>
 
-      <el-breadcrumb separator="/" v-if="!isCollapse">
+      <el-breadcrumb separator="/" v-if="!isCollapse && winW > 800">
         <el-breadcrumb-item v-for="el in breadcrumbList">{{
           el.title
         }}</el-breadcrumb-item>
@@ -70,6 +70,7 @@ let { base, common, route, router } = init();
 
 // 控制左侧菜单
 let isCollapse = computed(() => common.isCollapse);
+let winW = computed(() => common.winW);
 const setCollapse = () => common.setCollapse(!isCollapse.value);
 
 // 面包屑数据

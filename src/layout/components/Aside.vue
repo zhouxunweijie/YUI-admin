@@ -112,6 +112,7 @@ onMounted(() => {
       let flag = winW < 800 ? true : false;
       if (flag !== isCollapse.value) {
         common.setCollapse(flag);
+        common.setWindowWidth(winW);
       }
     }),
   );
