@@ -21,6 +21,12 @@ html.dark{
   --el-color-primary: var(--z-system-color); // 覆盖element-plus默认主题
 }
 
+.flexCenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 html.dark .github-markdown-body pre{
   background-color: var(--el-bg-color)

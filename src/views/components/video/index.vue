@@ -111,7 +111,7 @@
 <script setup>
 import { ref, reactive, onMounted, watchEffect } from 'vue';
 import { formatTime } from '@/utils';
-import { ElLoading } from 'element-plus';
+import { ElLoading, ElSlider, ElPopover } from 'element-plus';
 import FullScreen from '@/views/components/FullScreen/index.vue';
 let video = ref();
 let fullScreen = ref();

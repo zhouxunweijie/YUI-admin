@@ -41,6 +41,14 @@ let routeList = [
         icon: 'i-st_storage_port',
         type: '1',
       },
+      {
+        path: '/preview',
+        name: 'preview',
+        title: '文件预览器',
+        component: 'components/preview/dome',
+        icon: 'i-st_storage_port',
+        type: '1',
+      },
     ],
   },
   {

@@ -24,6 +24,7 @@ let sectionRef = ref();
 
 // 绑定事件，当触发是修改滚动条位置
 mitt.on('scrollChange', (obj) => {
+  console.log(obj, 'obj');
   sectionRef.value.scrollTop = obj.top;
   sectionRef.value.scrollLeft = obj.left;
 });

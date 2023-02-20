@@ -7,7 +7,7 @@
         :icon="isCollapse ? 'icon-zhankai' : 'icon-shouqi'"
       ></Iconfont>
 
-      <el-breadcrumb separator="/" v-if="!isCollapse && winW > 800">
+      <el-breadcrumb separator="/" v-if="winW > 800 ? true : false">
         <el-breadcrumb-item v-for="el in breadcrumbList">{{
           el.title
         }}</el-breadcrumb-item>
